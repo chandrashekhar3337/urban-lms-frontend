@@ -30,7 +30,7 @@ export default function AddLeadForm({ onSubmit, initial = {} }) {
       </div>
 
       <div className="mt-4 flex gap-2">
-        <button className="px-4 py-2 bg-accent text-white rounded-lg">Add Lead</button>
+        <button className="px-4 py-2 bg-accent text-black rounded-lg">Add Lead</button>
         <button type="reset" onClick={() => setForm({ name: "", email: "", phone: "", service: "", source: "Website" })}
           className="px-4 py-2 border rounded-lg">Reset</button>
       </div>

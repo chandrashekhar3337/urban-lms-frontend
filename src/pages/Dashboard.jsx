@@ -55,6 +55,9 @@ export default function Dashboard() {
 
   return (
     <div>
+       <h1 className="text-4xl font-bold text-blue-600">
+        Welcome to Urban LMS Dashboard 🎉
+        </h1>
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
         <StatCard title="Total Leads" value={counts.total} />
         <StatCard title="Website" value={counts.website} />
@@ -76,7 +79,7 @@ export default function Dashboard() {
         </div>
 
         <div className="card">
-          <h4 className="font-semibold mb-3">Add Lead</h4>
+          <h4 className="px-4 py-2 border rounded-lg">Add Lead</h4>
           <AddLeadForm onSubmit={onAdd} />
         </div>
       </div>
